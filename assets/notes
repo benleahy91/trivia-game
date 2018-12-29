@@ -1,0 +1,32 @@
+Press start
+	Run startGame function on click
+ 
+Timer for each question
+  Timer ends on user click
+  Add to wrong answers if timer = 0
+  Shows answer when timer expires
+  Timer stops/disappears after last question
+
+Questions
+	Each question is its own function
+	The end of each question calls the next question function
+	Is question right
+		Answer equals a blank array
+		if correct answer is clicked, answer = true
+		If incorrect answer is clicked, answer = false
+
+Answer Question
+	Option changes color on hover	
+	Outlines correct answer if wrong
+	Answer becomes green if correct
+	Shows answer regardless of correct/not
+	Move on to next question after click with no user input
+	Add to Correct and incorrect answer counter
+
+End game
+	Correct, incorrect, unanswered counter
+	Post score?
+	Post image past on how well they did?
+	Start over
+		Runs start of function
+
