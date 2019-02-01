@@ -40,7 +40,7 @@ function questionOne (e) {
 			setTimeout(function() {
 				questionTwo();
 			}, 5000);
-		}
+		};
 	}, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -89,7 +89,7 @@ function questionOne (e) {
 			questionTwo();
 		}, 5000);
 	});
-}
+};
 
 function questionTwo (e) {
 
@@ -114,7 +114,7 @@ function questionTwo (e) {
 			setTimeout(function() {
 				questionThree();
 			}, 5000);
-		}
+		};
 	}, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -165,7 +165,7 @@ function questionTwo (e) {
 			questionThree();
 		}, 5000);
 	});
-}
+};
 
 function questionThree (e) {
 
@@ -190,7 +190,7 @@ function questionThree (e) {
 			setTimeout(function() {
 				questionFour();
 			}, 5000);
-		}
+		};
 	}, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -241,7 +241,7 @@ function questionThree (e) {
 			questionFour();
 		}, 5000);
 	});
-}
+};
 
 function questionFour (e) {
 
@@ -266,7 +266,7 @@ function questionFour (e) {
 			setTimeout(function() {
 				questionFive();
 			}, 5000);
-		}
+		};
 	}, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -317,7 +317,7 @@ function questionFour (e) {
 			questionFive();
 		}, 5000);
 	});
-}
+};
 
 function questionFive (e) {
 
@@ -342,7 +342,7 @@ function questionFive (e) {
 			setTimeout(function() {
 				questionSix();
 			}, 5000);
-		}
+		};
 	}, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -393,7 +393,7 @@ function questionFive (e) {
 			questionSix();
 		}, 5000);
 	});
-}
+};
 
 function questionSix (e) {
 
@@ -418,7 +418,7 @@ function questionSix (e) {
 			setTimeout(function() {
 				questionSeven();
 			}, 5000);
-		}
+		};
 	}, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -469,7 +469,7 @@ function questionSix (e) {
 			questionSeven();
 		}, 5000);
 	});
-}
+};
 
 function questionSeven (e) {
 
@@ -494,7 +494,7 @@ function questionSeven (e) {
 			setTimeout(function() {
 				questionEight();
 			}, 5000);
-		}
+		};
 	}, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -545,7 +545,7 @@ function questionSeven (e) {
 			questionEight();
 		}, 5000);
 	});
-}
+};
 
 function questionEight (e) {
 
@@ -570,7 +570,7 @@ function questionEight (e) {
 		setTimeout(function() {
 			finalScore();
 		}, 5000);
-	}
+	};
 }, 1000);
 
 	$(".time-remaining").text(seconds + " seconds remaining");
@@ -621,7 +621,7 @@ function questionEight (e) {
 			finalScore();
 		}, 5000);
 	});
-}
+};
 
 function finalScore(e) {
 	$(".question").html("You got " + correctCounter + " right! <br>");
@@ -646,11 +646,10 @@ function finalScore(e) {
 		else {
 			$(".answers").text("You have displayed an almost willful incompetence towards any movie trivia. Donald Trump would like to formally extend you an offer to join his Cabinet as the Secretary of Film Preservation and Research.");
 			$(".gif").html("<img src='assets/images/trump-dumpster.gif' id='bg' alt=''>");
-		}
-}
+		};
+};
 
 $(document).ready(function() {
-
 	$(".start-box").on("click", function() {
 		startGame();
 	});
